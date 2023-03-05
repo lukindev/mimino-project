@@ -1,0 +1,15 @@
+:root {
+  --typical-light-color:  #F7F7F7;
+  --typical-dark-color: #121212;
+  --typiical-fw: 400;
+  --typical-fw-title: 700;
+  --typical-fs-text: 18px;
+  --typical-fs-title: 40px;
+  --typical-suptitle-color: #F7F7F7;
+  --dark-background-color: #121212;
+  --light-background-color: #F7F7F7;
+  --dark-border-bottom: 0.5px solid rgba(18, 18, 18, 0.3);
+  --light-border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
+  --hover-link-dark-color: #282525b6;
+  --hover-link-light-color: #ffffffa8;
+}

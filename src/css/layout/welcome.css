@@ -1,0 +1,124 @@
+/* welcome */
+/* Для всіх ефектів ховер і фокуса (колір, фон, тінь) зроблені переходи. 
+Час - 250ms, 
+функція розподілу часу - 
+cubic-bezier(0.4, 0, 0.2, 1). */
+
+.welcome-italic {
+  font-style: italic;
+}
+.welcome-about-container {
+  max-width: 375px;
+}
+.welcome-text {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #000000;
+  padding-bottom: 32px;
+}
+
+.welcome-paragraf {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.welcome-first {
+  padding-bottom: 32px;
+  text-align: justify;
+}
+.welcome-second {
+  padding-bottom: 32px;
+}
+.welcome-img {
+  padding-bottom: 64px;
+}
+.welcome-picture {
+  display: block;
+  align-items: center;
+}
+
+/* =================== ADAPTIVE ===================== */
+
+@media screen and (min-width: 375px) {
+  .welcome-img {
+    width: 335px;
+  }
+  .welcome-first {
+    width: 306px;
+  }
+  .welcome-second {
+    width: 335px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .welcome-paragraf-text {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding: 0;
+    padding-bottom: 29px;
+  }
+  .welcome-first {
+    padding: 0;
+  }
+  .welcome-second {
+    width: 366px;
+    padding: 0;
+  }
+  .welcome-img {
+    width: 704px;
+  }
+  .welcome-text {
+    font-size: 36px;
+    line-height: 1.11;
+    width: 434px;
+    padding-bottom: 50px;
+  }
+  .welcome-about-container {
+  max-width: 768px;
+  padding-bottom: 80px;
+}
+}
+
+@media screen and (min-width: 1440px) {
+  .welcome-about-container {
+  max-width: 1440px;
+  padding-bottom: 100px;
+}
+  .welcome-first {
+    padding-top: 310px;
+    padding-bottom: 24px;
+    width: 437px;
+  }
+  .welcome-second {
+    padding: 0;
+    width: 437px;
+  }
+  .welcome-paragraf-text {
+    gap: 0px;
+    padding: 0;
+  }
+  .welcome-desktop-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    gap: 32px;
+  }
+  .welcome-img {
+    width: 100%;
+  }
+  .welcome-container {
+    width: 437px;
+  }
+  .welcome-img {
+    padding-bottom: 0;
+  }
+.welcome-text{
+  padding: 0;
+}
+}

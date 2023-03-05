@@ -1,0 +1,144 @@
+/* location */
+/* Для всіх ефектів ховер і фокуса (колір, фон, тінь) зроблені переходи. 
+Час - 250ms, 
+функція розподілу часу - 
+cubic-bezier(0.4, 0, 0.2, 1). */
+
+.section.location {
+  padding: 64px 0;
+}
+
+.location-title {
+  font-family: 'DMSans-Medium-500', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #121212;
+  margin-bottom: 32px;
+}
+
+.google-map {
+  width: 335px;
+  height: 384px;
+  box-shadow: -14px 24px 68px -16px rgba(0, 0, 0, 0.12);
+  filter: grayscale(100%);
+  margin-bottom: 32px;
+}
+
+.hotel-address {
+  /* font-family: 'DM Sans-400'; */
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 28px;
+}
+
+.hotel-contacts {
+  font-family: 'DMSans-Medium-500', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #121212;
+}
+
+.hotel-contacts-item {
+  display: block;
+  font-family: 'DM Sans-400', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #121212;
+}
+
+.hotel-contacts-item:first-child {
+  margin-top: 12px;
+}
+
+.hotel-contacts-item:last-child {
+  margin-top: 4px;
+}
+
+/* =================== ADAPTIVE ===================== */
+
+/* @media screen and (min-width: 375px) {
+} */
+
+@media screen and (min-width: 768px) {
+  .section.location {
+    padding: 80px 0;
+  }
+
+  .location-title {
+    font-size: 68px;
+    margin-bottom: 40px;
+  }
+
+  .google-map {
+    width: 704px;
+    height: 576px;
+  }
+
+  .hotel-addy-contacts {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hotel-contacts-item:last-child {
+    margin-top: 2px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section.location {
+    padding: 100px 0;
+    /* position: relative; */
+  }
+
+  .section.location .container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 32px;
+  }
+
+  .google-map {
+    width: 640px;
+    height: 524px;
+  }
+
+  .hotel-contacts {
+    font-family: 'DMSans-Bold-700', sans-serif;
+    font-weight: 700;
+    display: flex;
+  }
+
+  .hotel-addy-contacts {
+    position: absolute;
+    top: 450px;
+    left: 700px;
+    gap: 70px;
+  }
+
+  .container-location {
+    position: relative;
+  }
+
+  .hotel-phone-numbers {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hotel-contacts-item:first-child {
+    margin: 0 0 4px 12px;
+  }
+
+  .hotel-contacts-item:last-child {
+    margin: 0 0 0 12px;
+  }
+}

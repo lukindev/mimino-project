@@ -1,0 +1,278 @@
+/* double lux room */
+/* Для всіх ефектів ховер і фокуса (колір, фон, тінь) зроблені переходи. 
+Час - 250ms, 
+функція розподілу часу - 
+cubic-bezier(0.4, 0, 0.2, 1). */
+
+.double-lux {
+  padding-bottom: 64px;
+}
+
+.double-lux-list {
+  margin-bottom: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 19px;
+}
+
+.double-lux-text-item {
+  margin-bottom: 28px;
+}
+
+.double-lux-text-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.double-lux-text-item:not(:first-child) {
+  margin-bottom: 28px;
+}
+
+.double-lux-title {
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #121212;
+  max-width: 264px;
+  margin-bottom: 32px;
+}
+
+.double-lux-btn-list {
+  display: flex;
+  gap: 12px;
+}
+
+.double-lux-text {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #121212;
+}
+
+.double-lux-btn-link {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #121212;
+  background-color: #f7f7f7;
+  margin-right: 12px;
+  text-transform: uppercase;
+  width: 128px;
+  height: 34px;
+  padding: 8px 10px;
+  border: 0.8px solid #121212;
+  border-radius: 32px;
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.double-lux-btn {
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #121212;
+  background-color: #f7f7f7;
+  padding: 8px 13px;
+  gap: 10px;
+  width: 117px;
+  height: 34px;
+  border: 0.8px solid #121212;
+  border-radius: 32px;
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.double-lux-btn:hover,
+.double-lux-btn:focus,
+.double-lux-btn-link:hover,
+.double-lux-btn-link:focus {
+  background-color: #121212;
+  color: #f6f6f6;
+}
+
+/* =================== ADAPTIVE ===================== */
+
+/* @media screen and (min-width: 375px) {
+  .container {
+      max-width: 365px;
+      padding: 0 20px;
+      margin: 0 auto;
+  }
+} */
+/* @media screen and (min-width: 375px) {
+} */
+
+@media screen and (min-width: 768px) {
+
+  .double-lux-list {
+    position: relative;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 32px;
+    column-gap: 32px;
+  }
+
+  .double-lux {
+    padding-bottom: 80px;
+  }
+
+  .item-bedroom {
+    justify-content: flex-end;
+  }
+
+  .item-bathroom {
+    order: -1;
+  }
+
+  .item-kitchen {
+    top: 293px;
+    left: 0;
+    position: absolute;
+  }
+
+  .double-lux-title {
+    min-width: 468px;
+    margin-bottom: 32px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  .double-lux-text-item:not(:last-child) {
+    width: 369px;
+    height: 168px;
+    margin-bottom: 0;
+  }
+  
+  .double-lux-text-item:not(:first-child) {
+    width: 299px;
+    height: 96px;
+    margin-bottom: 0;
+  }
+
+  .double-lux-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.33;
+  }
+
+  .double-lux-text-list {
+    margin-left: auto;
+    margin-bottom: 40px;
+    display: flex;
+    gap: 32px;
+    
+  }
+
+  .double-lux-text-item {
+    width: 369px;
+  }
+
+  .double-lux-btn-list {
+    justify-content: flex-end;
+    gap: 14px;
+  }
+
+  .double-lux-btn-link {
+    width: 140px;
+    height: 40px;
+    padding: auto 19px;
+    line-height: 1.71;
+  }
+
+  .double-lux-btn {
+    width: 129px;
+    height: 40px;
+    padding: 8px 19px;
+    line-height: 1.71;
+  }
+
+  .btn-list-wrap {
+    display: flex;
+    margin-top: 40px;
+  }
+
+  .double-lux-text-list {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .double-lux {
+    padding-bottom: 100px;
+  }
+
+  .double-lux-list {
+    margin-bottom: 50px;
+    align-items: center;
+  }
+
+  .item-bedroom {
+    order: 1;
+  }
+
+  .item-bathroom {
+    order: 2;
+  }
+
+  .item-kitchen {
+    position: static;
+  }
+
+  .double-text-big-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .double-lux-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  .double-lux-text-item:not(:last-child) {
+    width: 355px;
+    height: 192px;
+  }
+  
+  .double-lux-text-item:not(:first-child) {
+    width: 299px;
+    height: 96px;
+  }
+
+  .double-lux-btn-list {
+    margin-left: auto;
+  }
+
+  .double-lux-btn {
+    margin-right: 0;
+  }
+
+  .double-lux-btn-link {
+    width: 166px;
+    height: 42px;
+    padding: 11px 24px;
+    line-height: 1.33;
+  }
+
+  .double-lux-btn {
+    width: 152px;
+    height: 42px;
+    padding: 9px 24px;
+    line-height: 1.33;
+  }
+}

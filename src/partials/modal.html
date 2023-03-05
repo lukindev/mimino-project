@@ -1,0 +1,227 @@
+<div class="backdrop is-hidden data" data-modal-table>
+  <div class="modal modal-table">
+    <button type="button" data-modal-table-close class="btn modal-close">
+      <svg class="button-x" width="32" height="32">
+        <use href="./img/sprite-nikita.svg#icon-x-close"></use>
+      </svg>
+    </button>
+    <p class="modal-title">BOOK <em>A TABLE</em></p>
+    <form class="modal-form">
+      <div class="form-wrappp form-wrap-table">
+        <div class="modal-field">
+          <label class="modal-input-text" for="user-name"></label>
+          <div class="input-wrap">
+            <input
+              class="modal-input"
+              id="user-name"
+              name="user-name"
+              type="text"
+              placeholder="YOUR NAME"
+              required
+              minlength="2"
+            />
+            <p class="modal-text">Who should book a table for?</p>
+          </div>
+        </div>
+        <div class="modal-field">
+          <label class="modal-input-text" for="number-of-people"></label>
+          <div class="input-wrap">
+            <select
+              class="modal-input"
+              name="number-of-people"
+              placeholder="NUMBER OF PEOPLE"
+            >
+              <option value="quantity">NUMBER OF PEOPLE</option>
+              <option value="quantity">1</option>
+              <option value="quantity">2</option>
+              <option value="quantity">3</option>
+              <option value="quantity">4</option>
+              <option value="quantity">over 4</option>
+            </select>
+          </div>
+        </div>
+        <div class="modal-field">
+          <label class="modal-input-text" for="today"></label>
+          <div class="input-wrap">
+            <select class="modal-input" name="today" placeholder="TODAY">
+              <option value="when">TODAY</option>
+              <option value="when">TOMORROW</option>
+              <option value="when">DAY AFTER TOMORROW</option>
+            </select>
+            <p class="modal-text">What date to book?</p>
+          </div>
+        </div>
+        <div class="modal-field">
+          <label class="modal-input-text" for="user-tel"></label>
+          <div class="input-wrap">
+            <input
+              class="modal-input"
+              id="user-tel"
+              name="user-tel"
+              type="tel"
+              pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+              title=""
+              placeholder="+ 38 ()"
+              required
+            />
+            <p class="modal-text">Phone number</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <button type="submit" class="btn modal-btn-form window-button">
+          MAKE A RESERVATION
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="backdrop is-hidden datar" data-modal-room>
+  <div class="modal modal-room">
+    <button type="button" data-modal-room-close class="btn modal-close">
+      <svg class="button-x" width="32" height="32">
+        <use href="./img/sprite-nikita.svg#icon-x-close"></use>
+      </svg>
+    </button>
+    <p class="modal-title">BOOK <em>A ROOM</em></p>
+    <form class="modal-form">
+      <div class="form-wrappp form-wrap-room">
+        <div class="modal-field">
+          <label class="modal-input-text" for="user-name"></label>
+          <div class="input-wrap">
+            <input
+              class="modal-input"
+              id="user-name"
+              name="user-name"
+              type="text"
+              placeholder="YOUR NAME"
+              required
+              minlength="2"
+            />
+            <p class="modal-text">Who should book a table for?</p>
+          </div>
+        </div>
+        <div class="modal-field">
+          <label class="modal-input-text" for="user-tel"></label>
+          <div class="input-wrap">
+            <input
+              class="modal-input"
+              id="user-tel"
+              name="user-tel"
+              type="tel"
+              pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+              title="+380 (96) 111-11-11"
+              placeholder="+ 38 ()"
+              required
+            />
+            <p class="modal-text">Phone number</p>
+          </div>
+        </div>
+        <div class="modal-field">
+          <label class="modal-input-text" for="today"></label>
+          <div class="input-wrap">
+            <select class="modal-input" name="today">
+              <option value="when">TODAY</option>
+              <option value="when">TOMORROW</option>
+              <option value="when">DAY AFTER TOMORROW</option>
+            </select>
+            <p class="modal-text">Check-in date</p>
+          </div>
+        </div>
+        <div class="modal-field">
+          <label class="modal-input-text" for="data"></label>
+          <div class="input-wrap">
+            <select class="modal-input" name="data" placeholder="25/04/2023">
+              <option value="when">25/04/2023</option>
+              <option value="when">26/04/2023</option>
+              <option value="when">27/04/2023</option>
+              <option value="when">28/04/2023</option>
+              <option value="when">29/04/2023</option>
+              <option value="when">30/04/2023</option>
+            </select>
+            <p class="modal-text">Check-in date</p>
+          </div>
+        </div>
+        <div class="modal-field">
+          <label class="modal-input-text" for="number"></label>
+          <div class="input-wrap">
+            <select class="modal-input" name="number">
+              <option value="quantity">DOUBLE SUITE</option>
+              <option value="quantity">DOUBLE LUXURY ROOM</option>
+              <option value="quantity">TRIPLE ROOM</option>
+              <option value="quantity">FOUR-SEATER ROOM</option>
+            </select>
+            <p class="modal-text">Number category</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <button type="submit" class="btn modal-btn-form window-button">
+          MAKE A RESERVATION
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="backdrop is-hidden datap" data-modal-prices>
+  <div class="modal modal-prices">
+    <button type="button" data-modal-prices-close class="btn modal-close">
+      <svg class="button-x" width="32" height="32">
+        <use href="./img/sprite-nikita.svg#icon-x-close"></use>
+      </svg>
+    </button>
+    <p class="modal-title">PRICES PER <em>ROOM</em></p>
+    <form class="modal-form">
+        <p class="modal-input-title">DOUBLE SUITE</p>
+        <div class="form-wrappp form-wrap-price">
+        <div class="modal-field suite">
+          <label class="modal-input-text" for="number"></label>
+          <div class="input-wrap">
+            <select class="modal-input" name="number" placeholder="1">
+              <option value="quantity">1</option>
+              <option value="quantity">2</option>
+              <option value="quantity">3</option>
+              <option value="quantity">4</option>
+              <option value="quantity">over 4</option>
+            </select>
+            <p class="modal-text">Number of nights</p>
+          </div>
+        </div>
+        <div class="modal-field prices">
+          <label class="modal-input-text" for="prices"></label>
+          <div class="input-wrap">
+            <input
+              class="modal-input"
+              id="user-prices"
+              name="user-prices"
+              type="number"
+              placeholder="1000"
+              required
+              minlength="4"
+            />
+            <p class="modal-text">UAH</p>
+          </div>
+        </div>
+        <div class="modal-field price-data">
+          <label class="modal-input-text" for="Date"></label>
+          <div class="input-wrap">
+            <select class="modal-input" name="data" placeholder="25/04/2023">
+              <option value="when">25/04/2023</option>
+              <option value="when">26/04/2023</option>
+              <option value="when">27/04/2023</option>
+              <option value="when">28/04/2023</option>
+              <option value="when">29/04/2023</option>
+              <option value="when">30/04/2023</option>
+            </select>
+            <p class="modal-text">Check-in date</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <button type="submit" class="btn modal-btn-form window-button">
+          MAKE A RESERVATION
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

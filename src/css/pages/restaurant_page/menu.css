@@ -1,0 +1,240 @@
+/* menu */
+/* .list-style-type: disc; */
+
+.rest-menu {
+  background: #000;
+  padding-top: 40px;
+  padding-bottom: 64px;
+}
+.head-title {
+  font-family: 'DMSans-Bold-700', sans-serif;
+  font-size: 32px;
+  line-height: 1.25;
+  margin-bottom: 36px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  color: #f7f7f7;
+  text-align: center;
+}
+
+/* .box-section{
+  
+} 
+.section-menu{
+  
+} */
+.center-div{
+  display: flex;
+  justify-content: center;
+}
+.nav-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+
+}
+
+.nav-link{
+  font-family: 'DMSans-BoldItalic-700', sans-serif;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  color: #f7f7f7;
+}
+.nav-link:is(:hover, :focus) {
+  color: var(--hover-link-dark-color);
+}
+
+
+@media screen and (min-width: 1135px) {
+  .nav-list{
+   display: none;
+  }
+  .nav-link{
+    display: none;
+  }
+  .nav{
+    display: none;
+  }
+}
+.section-title {
+  font-family: 'DMSans-BoldItalic-700', sans-serif;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  color: #f7f7f7;
+  margin-bottom: 32px;
+  margin-top: 28px;
+}
+.supline {
+  display: flex;
+}
+.plus{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding-bottom: 14px;
+  padding-top: 14px;
+}
+.name-meals {
+  font-family: 'DMSans-Medium-500', sans-serif;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #f7f7f7;
+  margin-bottom: 8px;
+  /* margin-top: 8px; */
+}
+.weight {
+  font-family: 'DM Sans-400', sans-serif;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: #d8d7d7;
+  margin-left: auto;
+  /* margin-top: 8px; */
+}
+.content {
+  font-family: 'DM Sans-400', sans-serif;
+  font-size: 10px;
+  line-height: 1.4;
+  letter-spacing: 0.18em;
+  color: rgba(216, 215, 215, 0.5);
+  width: 233px;
+  height: auto;
+  /* margin-bottom: 8px; */
+}
+.price {
+  font-family: 'DMSans-Bold-700', sans-serif;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #f7f7f7;
+  margin-left: auto;
+  /* margin-top: 8px; */
+}
+.btn-book-menu {
+  border: 0.8px solid #f7f7f7;
+  border-radius: 32px;
+  font-family: 'DM Sans-400', sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  background: transparent;
+  color: #f7f7f7;
+
+  height: 40px;
+  width: 140px;
+  margin-top: 50px;
+  
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-book-menu:is(:hover, :focus) {
+  background-color: #f6f6f6;
+  color: #121212;
+}
+
+/* =================== ADAPTIVE ===================== */
+
+@media screen and (min-width: 375px) {
+  
+  .box-section{
+        width: 335px;
+    }
+    .content{
+      width: 233px;
+    }
+   
+}
+
+@media screen and (min-width: 768px) {
+ 
+  .box-section{
+    width: 515px;
+
+  }
+  .content{
+    width: 345px;
+  }
+  .rest-menu{
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  
+  .head-title{
+    font-size: 40px;
+    line-height: 1.1;
+}
+.section-title {
+    
+    font-size: 24px;
+    line-height: 1;
+    margin-top: 32px;
+
+}
+.name-meals{
+    font-size: 18px;
+    line-height: 1.33;
+
+}
+.weight{
+    font-size: 14px;
+    line-height: 1.29;
+}
+.content{
+    font-size: 12px;
+    line-height: 1.5;
+    width: 345px;
+
+}
+.price{
+    font-size: 18px;
+    line-height: 1.33;
+}
+
+
+}
+
+ @media screen and (min-width: 1440px) {
+ 
+  .rest-menu{
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .head-title{
+    margin-bottom: 64px;
+    
+  }
+  
+  .section-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 74px;
+    row-gap: 50px;
+  }
+  .content{
+    width: 345px;
+  }
+  .btn-book-menu{
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 18px;
+    line-height: 1.33;
+    width: 167px;
+    height: 42px;
+  }
+} 

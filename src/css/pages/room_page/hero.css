@@ -1,0 +1,55 @@
+/* hero */
+
+/* Для всіх ефектів ховер і фокуса (колір, фон, тінь) зроблені переходи. 
+Час - 250ms, 
+функція розподілу часу - 
+cubic-bezier(0.4, 0, 0.2, 1). */
+
+
+
+
+
+
+
+
+/* =================== ADAPTIVE ===================== */
+
+/* @media screen and (min-width: 375px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1440px) {
+} */
+
+.hero-img-cut.double-room-cut{
+    width: 69px;
+    left: 296px;
+    top: 296px
+
+}
+
+@media screen and (min-width:768px) {
+    .hero-img-cut.double-room-cut{
+        width: 302px;
+    left: 469px;
+    top: 382px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .hero-img-cut.double-room-cut{
+    width: 251px;
+    left: 1235px;
+    top: 107px;
+    }
+
+    .arrows-list.double-arrows{
+        top: 705px;
+    }
+
+    .hero-hotel-text.double-room-text{
+        padding-bottom: 48px;
+    }
+}

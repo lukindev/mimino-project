@@ -1,0 +1,120 @@
+/* --------------------fonts https://www.youtube.com/watch?v=xrOIsGn-DT8*/
+@font-face {
+  font-family: 'DM Sans-400', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  src: local(DM Sans);
+  src: url(/src/fonts/fontsDMSans\/DMSans-Regular);
+}
+
+@font-face {
+  font-family: 'GeometriaRegular-400', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: local(GeometriaRegular);
+  src: url(/src/fonts/GeometriaRegular.ttf);
+}
+
+@font-face {
+  font-family: 'DMSans-Bold-700', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  src: local(DM Sans-Bold);
+  src: url(/src/fonts/fontsDMSans/DMSans-Bold.ttf);
+}
+@font-face {
+  font-family: 'DMSans-BoldItalic-700', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  src: local(DM Sans-BoldItalic);
+  src: url(/src/fonts/fontsDMSans/DMSans-BoldItalic.ttf);
+}
+@font-face {
+  font-family: 'DMSans-Italic-400', sans-serif;
+  font-weight: normal;
+  font-style: italic;
+  src: local(DM Sans-Italic);
+  src: url(/src/fonts/fontsDMSans/DMSans-Italic.ttf);
+}
+@font-face {
+  font-family: 'DMSans-Medium-500', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  src: local(DM Sans-Medium);
+  src: url(/src/fonts/fontsDMSans/DMSans-Medium.ttf);
+}
+@font-face {
+  font-family: 'DMSans-MediumItalic-500', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  src: local(DM Sans-MediumItalic);
+  src: url(/src/fonts/fontsDMSans/DMSans-MediumItalic.ttf);
+}
+/* --------------------fonts */
+
+body {
+  font-family: 'DM Sans-400', sans-serif;
+}
+
+.btn {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  margin: -1px;
+}
+
+@keyframes changeTransformScale {
+    0% {transform: scale(0.9);}
+    /* 50% {transform: scale(1.2);} */
+    100% {transform: scale(1.05);}
+} 
+
+/* -=====anination btn=====- */
+/* -=====anination btn=====- */
+.hero-button-hotel {
+    animation: changeTransformScale 1500ms infinite linear alternate;
+}
+
+.hero-button-hotel:hover {
+  animation-play-state: paused;
+}
+.hero-restaurant-link-menu {
+    animation: changeTransformScale 1500ms infinite linear alternate;
+}
+
+.hero-restaurant-link-menu:hover {
+    animation-play-state: paused;
+}
+.amenities-btn {
+    animation: changeTransformScale 1500ms infinite linear alternate;
+}
+
+.amenities-btn:hover {
+    animation-play-state: paused;
+}
+
+.btn-book-menu {
+    animation: changeTransformScale 1500ms infinite linear alternate;
+}
+.btn-book-menu:hover {
+    animation-play-state: paused;
+}

@@ -1,0 +1,190 @@
+/* about */
+
+.about-kitchen {
+    padding-bottom: 64px;
+}
+
+.about-kitchen-img-wrap {
+    height: 637px;
+    position: relative;
+}
+.kitchen-list-img {
+  
+}
+.kitchen-item-1 {
+  position: absolute;
+  max-width: 335px;
+  height: 443px;
+  left: 0px;
+  top: 0px;
+}
+.kitchen-item-2 {
+  position: absolute;
+  max-width: 158px;
+  height: 149px;
+  left: 0px;
+  top: 463px;
+}
+.kitchen-item-3 {
+  position: absolute;
+  max-width: 157px;
+  height: 149px;
+  left: 178px;
+  top: 463px;
+}
+.about-kitchen-text-wrap {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.kitchen-text-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.kitchen-text {
+  font-family: 'DM Sans-400', sans-serif;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+/* =================== ADAPTIVE ===================== */
+
+/* @media screen and (min-width: 375px) {
+  } */
+
+/* =================== TABLET ===================== */
+
+@media screen and (min-width: 768px) {
+  .about-kitchen {
+    padding-bottom: 80px;
+  }
+
+  .about-kitchen-img-wrap {
+    height: 515px;
+    margin-bottom: 40px;
+  }
+
+  .kitchen-item-1 {
+    max-width: 388px;
+    height: 515px;
+    left: 316px;
+  }
+
+  .about-kitchen-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+  }
+
+  .kitchen-item-2 {
+    max-width: 284px;
+    height: 296px;
+    position: static;
+  }
+
+  .kitchen-item-3 {
+    max-width: 284px;
+    height: 203px;
+    position: static;
+  }
+
+  .about-kitchen-text-wrap {
+    max-width: 704px;
+  }
+
+  .kitchen-list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+  }
+
+  .kitchen-text-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .kitchen-text-item:first-child {
+    max-width: 349px;
+  }
+
+  .kitchen-text-item:last-child {
+    max-width: 323px;
+  }
+
+  .kitchen-text {
+    font-family: 'DM Sans-400', sans-serif;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #000000;
+  }
+}
+
+/* =================== DECKTOP ===================== */
+
+@media screen and (min-width: 1440px) {
+  .about-kitchen {
+    padding-bottom: 100px;
+  }
+
+  .about-kitchen-img-wrap {
+    margin-bottom: 32px;
+    height: 389px;
+  }
+
+  .kitchen-item-1 {
+    max-width: 511px;
+    height: 598px;
+    left: 0px;
+    top: 0px;
+  }
+
+  .kitchen-item-2 {
+    position: absolute;
+    max-width: 334px;
+    height: 389px;
+    left: 543px;
+    top: 0px;
+  }
+
+  .kitchen-item-3 {
+    position: absolute;
+    max-width: 467px;
+    height: 389px;
+    left: 909px;
+    top: 0px;
+  }
+
+  .about-kitchen-text-wrap {
+    max-width: 810px;
+    margin-left: 543px;
+    margin-right: 14px;
+  }
+
+  .kitchen-text-item:not(:last-child) {
+    max-width: 334px;
+    height: 144px;
+  }
+
+  .kitchen-text-item:not(:first-child) {
+    max-width: 453px;
+    height: 120px;
+  }
+
+  .kitchen-text {
+    font-family: 'DMSans-Medium-500', sans-serif;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+}

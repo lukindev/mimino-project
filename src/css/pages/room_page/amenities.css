@@ -1,0 +1,185 @@
+/* general */
+
+/* Для всіх ефектів ховер і фокуса (колір, фон, тінь) зроблені переходи. 
+Час - 250ms, 
+cubic-bezier(0.4, 0, 0.2, 1). */
+
+.general-amenities {
+  padding-top: 40px;
+  padding-bottom: 64px;
+  background-color: var(--dark-background-color);
+}
+
+.general-amenities-container {
+  position: relative;
+}
+
+.general-amenities-list {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 429px;
+}
+
+.general-amenities-subtitle {
+  margin-bottom: 28px;
+
+  color: var(--typical-suptitle-color);
+  font-family: 'DMSans-Bold-700', sans-serif;
+  font-size: 28px;
+  line-height: calc(32 / 28);
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.amenities-list {
+  padding-left: 20px;
+
+  list-style-type: disc;
+  color: var(--typical-light-color);
+}
+.amenities-text {
+  color: var(--typical-light-color);
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.amenities-images-item {
+  position: absolute;
+}
+
+.amenities-first-img {
+  z-index: 2;
+  left: 0px;
+  bottom: 157px;
+}
+
+.amenities-second-img {
+  right: 0px;
+  bottom: 70px;
+}
+
+.amenities-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 175px;
+  width: 100%;
+  height: 34px;
+  padding: 8px 30px;
+  border: 0.8px solid #f7f7f7;
+  border-radius: 32px;
+  background-color: transparent;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--typical-light-color);
+}
+
+.amenities-btn:is(:hover, :focus) {
+  background-color: var(--light-background-color);
+  color: var(--typical-dark-color);
+  border-color: var(--typical-dark-color);
+}
+
+@media screen and (max-width: 767px) {
+  .amenities-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 1399px) {
+  .general-amenities-list {
+    gap: 40px;
+  }
+}
+
+/* =================== ADAPTIVE ===================== */
+/* mobile */
+
+/* @media screen and (min-width: 375px) {
+} */
+
+/* tablet */
+
+@media screen and (min-width: 768px) {
+
+  .general-amenities {
+    padding-top: 80px;
+    padding-bottom: 194px;
+  }
+
+  .general-amenities-list {
+    margin-bottom: 493px;
+  }
+  .general-amenities-subtitle {
+    margin-bottom: 40px;
+
+    font-size: 40px;
+    line-height: calc(44 / 40);
+  }
+  .amenities-text {
+    font-size: 18px;
+    line-height: calc(24 / 18);
+  }
+  .amenities-first-img {
+    bottom: 80px;
+  }
+  .amenities-second-img {
+    bottom: -115px;
+  }
+  .amenities-btn {
+    max-width: 143px;
+    height: 40px;
+    padding: 8px 20px;
+
+    line-height: 1.8;
+  }
+}
+
+/* desktop */
+
+@media screen and (min-width: 1440px) {
+
+  .general-amenities {
+    padding-top: 94px;
+    padding-bottom: 235px;
+  }
+  .general-amenities-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 100px;
+
+    margin-bottom: 339px;
+  }
+  .general-amenities-item:first-child {
+    margin-right: 70px;
+  }
+  .general-amenities-item:nth-child(3) {
+    margin-right: 270px;
+  }
+  .amenities-first-img {
+    left: 570px;
+    bottom: 80px;
+  }
+  .amenities-second-img {
+    bottom: -122px;
+  }
+  .amenities-btn {
+    margin-left: 560px;
+    max-width: 170px;
+    height: 42px;
+    padding: 9px 20px;
+
+    font-size: 18px;
+    line-height: 1.3;
+  }
+}

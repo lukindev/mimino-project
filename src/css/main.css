@@ -1,0 +1,50 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+
+/* ====== UTILS ======= */
+
+@import url('./utils/variables.css');
+
+/* ====== BASE ======= */
+
+@import url('./base/common.css');
+@import url('./base/reset.css');
+
+/* ======COMPONENTS======= */
+
+@import url('./components/container.css');
+
+/* ====== LAYOUT ======= */
+
+@import url('./layout/header.css');
+@import url('./layout/hero.css');
+@import url('./layout/about.css');
+@import url('./layout/restaurant.css');
+@import url('./layout/welcome.css');
+@import url('./layout/hotel.css');
+@import url('./layout/location.css');
+@import url('./layout/footer.css');
+@import url('./layout/modal.css');
+/* @import url('./layout/test.modals.css'); */
+
+/* ====== PAGES ======= */
+
+/* --- hotel page --- */
+@import url('./pages/hotel_page/hero.css');
+@import url('./pages/hotel_page/double_lux.css');
+@import url('./pages/hotel_page/triple.css');
+@import url('./pages/hotel_page/four_seater.css');
+/* --- restaurant page --- */
+@import url('./pages/restaurant_page/hero.css');
+@import url('./pages/restaurant_page/about.css');
+@import url('./pages/restaurant_page/menu.css');
+/* --- room  page --- */
+@import url('./pages/room_page/hero.css');
+@import url('./pages/room_page/amenities.css');
+
+
+
